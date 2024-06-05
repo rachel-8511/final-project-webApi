@@ -1,0 +1,223 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Heebo:900|Roboto|Satisfy&display=swap");
+
+.Header__container {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 5vw;
+    width: 100%;
+}
+
+.Header__left {
+    display: flex;
+    flex-direction: row;
+    font-family: "Satisfy", cursive;
+}
+
+.Header__logo {
+    width: 4.5em;
+    margin: auto;
+}
+
+.Header__title {
+    display: flex;
+    margin-left: 0.6em;
+}
+
+h1 {
+    font-weight: normal;
+    margin: 0.1em;
+}
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+   
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #000000;
+    display: inline-block;
+    position: absolute;
+    z-index: -10;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+  }
+  .shopping-cart {
+    width: 750px;
+    margin: 80px auto;
+    background: #ffffff00;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+   color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    height: 60px;
+    padding: 20px 30px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+  }
+   
+  .item {
+    padding: 20px 30px;
+    height: 120px;
+    display: flex;
+  }
+   
+  .item {
+    border-top:  1px solid #ff0000;
+    border-bottom:  1px solid #ff0000;
+  }
+  .buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+
+  }
+  .delete-btn,
+  .like-btn {
+    display: inline-block;
+    Cursor: pointer;
+  }
+
+  .image img{
+    margin-right: 50px;
+    width: 60%;
+    height: 100%;
+  }
+   
+  .description {
+    padding-top: 20px;
+    margin-right: 60px;
+    width: 115px; 
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  .quantity {
+    padding-top: 20px;
+    margin-right: 60px;
+  }
+  .quantity span {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+  }
+   
+  button[class*=btn] {
+    color: white;
+    width: 30px;
+    height: 30px;
+    background-color: #e1e8ee00;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+
+  .total-price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+  }
+  a {
+    text-decoration: none; 
+    color: rgb(255, 0, 0);
+   
+}
+
+.button-89 {
+    --b: 3px;   
+    --s: .45em; 
+    --color: #fcfcfd;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+    margin-right: 20px; 
+  margin-top:20px ;
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button-89:active {
+    background: var(--color);
+    color: #fff;
+  }
+  
+  
+  @media (max-width: 800px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image img {
+      width: 50%;
+    }
+    .image,
+    .quantity,
+    .description {
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+    }
+    .buttons {
+      margin-right: 20px;
+    }
+  }

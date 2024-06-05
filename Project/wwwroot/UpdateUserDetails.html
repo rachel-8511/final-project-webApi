@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/Register.css" rel="stylesheet" />
+    <script src="js/UserActions.js"></script>
+    <meta charset="utf-8" />
+    <title>Update</title>
+</head>
+<body style="text-align:center">
+
+    <div class="wrapper">
+        <form action="#" onsubmit="UpdateUserDetails()">
+            <h2>Edit user details</h2>
+            <div class="input-field">
+                <input required id="firstName">
+                <label>Enter your first Name</label>
+            </div>
+            <div class="input-field">
+                <input required id="lastName">
+                <label>Enter your last Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" required id="email">
+                <label>Enter your email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" required id="password" oninput="CheckPassword()">
+                <label>Enter your passward</label>
+            </div>
+            <br /><br />
+            <label for="">
+                Strength of password
+            </label>
+            <div class="power-container">
+                <div id="power-point"></div>
+            </div>
+            <br /><br />
+            <button type="submit">editing</button>
+        </form>
+    </div>
+</body>
+</html>

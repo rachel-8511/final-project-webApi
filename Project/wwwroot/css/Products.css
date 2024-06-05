@@ -1,0 +1,513 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Heebo:900|Roboto|Satisfy&display=swap");
+
+html,
+body {
+    /* direction: rtl; */
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+}
+
+
+
+ul {
+    margin: 0;
+}
+
+.floatRight {
+    float: right;
+}
+
+.QuickLinks ul li a::after {
+    content: '|';
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.QuickLinks ul li a::after {
+    content: '|';
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card {
+    /* direction: ltr; */
+    max-width: 250px;
+    margin: 15px;
+    text-align: center;
+    padding: 15px;
+    float: left;
+    height: 420px;
+    /* margin-left: 30px; */
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+}
+
+    .card * {
+        font-size: 100%;
+        font-family: system-ui;
+    }
+
+.bar::before {
+    content: 'חנות הצעצועים שלי';
+    color: white;
+    /* display: inline-block; */
+    position: absolute;
+    /* margin: 0 auto; */
+    /* display: block; */
+    top: 8px;
+    left: 51%;
+    font-family: Helvetica;
+}
+
+.price {
+    color: rgb(255, 255, 255);
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    background-color: #ffffff00;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+    .card button:hover {
+        opacity: 0.7;
+    }
+
+.bar {
+    background-color: black;
+    height: 35px;
+}
+
+.Icon {
+    background-image: url(../Images/BagActive.png);
+    background-repeat: no-repeat;
+    padding: 9px 2px 2px 2px;
+    color: #4f8855;
+    float: right;
+    margin: 1px 0 0 0;
+    width: 24px;
+    height: 21px;
+}
+
+.BagSummary .Icon .ItemCount {
+    overflow: hidden;
+    height: 16px;
+}
+
+    .BagSummary .Icon .ItemCount span {
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: 100%;
+        margin-top: -1px;
+    }
+
+.goToCart {
+    background: #1a6461;
+    font-size: 11px;
+    color: #fff;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'azo-sans', sans-serif;
+    border-radius: 3px;
+    display: inline-block;
+    float: right;
+    margin: 4px;
+}
+
+.addedToBagDialogue::before {
+    background-color: #fff;
+    box-shadow: 2px -2px 2px rgba(0, 0, 0, .2);
+    content: " ";
+    display: block;
+    height: 15px;
+    left: 60px;
+    position: absolute;
+    top: -7px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 15px;
+    z-index: 4999;
+}
+
+
+.QuickLinks ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    font-family: Helvetica;
+}
+
+.QuickLinks ul li {
+    float: left;
+}
+
+
+.Filters {
+    /* text-align: center; */
+    position: absolute;
+    width: 250px;
+    float: right;
+    margin: 4px 4px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: absolute;
+    margin-right: 50px;
+    z-index: 102;
+    /* background-color: rgba(249, 249, 249, 0); */
+    border: 1px solid #ff0000;
+    font-family: Arial;
+    font-size: 14px;
+    /* min-height: 500px; */
+}
+
+    .Filters a {
+        margin-right: 85px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+    }
+
+.nameFilter input {
+    margin-right: 25px;
+    width: 50px;
+    height: 24px;
+}
+
+.filterBreak {
+    padding-top: 10vh;
+}
+
+
+
+.priceInputText {
+    background-color: #fff;
+    height: 31px;
+    padding: 3px 7px;
+    line-height: normal;
+    width: 50px;
+    border: 1px solid #888C8C;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgb(15 17 17 / 15%) inset;
+    outline: 0;
+}
+
+.priceCurrency {
+    position: absolute;
+    margin-top: 6.5px;
+    line-height: 22px;
+    font-size: 25px;
+    margin-right: -19px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+
+
+.PoductList {
+    margin-left: 33%;
+}
+
+.ResultCount {
+    margin-left: 10%;
+}
+
+.filterBreak {
+    margin-left: 10%;
+}
+
+.card-footer {
+    border-top: 1px solid #ddd;
+}
+
+    .card-footer:after,
+    .card-footer:before {
+        content: '';
+        display: table;
+    }
+
+    .card-footer:after {
+        clear: both;
+    }
+
+    .card-footer .wcf-left {
+        float: left;
+    }
+
+    .card-footer .wcf-right {
+        float: right;
+    }
+
+
+
+
+
+.Header__container {
+    box-sizing: border-box;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    height: 5em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 5vw;
+    width: 100%;
+    /* direction: ltr; */
+}
+
+.Header__left {
+    display: flex;
+    flex-direction: row;
+    font-family: "Satisfy", cursive;
+}
+
+.Header__logo {
+    width: 4.5em;
+    margin: auto;
+}
+
+.Header__title {
+    display: flex;
+    margin-left: 0.6em;
+}
+
+h1 {
+    font-weight: normal;
+    margin: 0.1em;
+}
+
+.Header__menu {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.Header__menuItem {
+    list-style-type: none;
+    margin: auto 1em;
+}
+
+
+#filters {
+    margin-left: 80px;
+    margin-top: 80px;
+    padding: 50px;
+    border: none;
+    border-right: 2px solid white;
+}
+
+
+
+    #filters .ResultCount .Clear {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        #filters .ResultCount .Clear:hover {
+            text-decoration: underline;
+        }
+
+    /* סגנון כללי עבור filterBreak */
+    #filters .filterBreak {
+        margin-bottom: 10px;
+    }
+
+    /* סגנון עבור כותרת Categories */
+    #filters #categoryList span {
+        font-weight: bold;
+    }
+
+    /* סגנון עבור inputSearch */
+    #filters .inputSearch {
+        font-family: inherit;
+        width: 120px;
+        border: none;
+        border-bottom: 2px solid #ffffff;
+        outline: 0;
+        font-size: 17px;
+        color: #ffffff;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+        margin-right: 68px;
+    }
+
+    #filters button {
+        background-color: #5bc0de00;
+        border: none;
+        margin-right: 5px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+        #filters button img {
+            vertical-align: middle;
+        }
+
+    /* סגנון עבור priceInputText */
+    #filters .priceInputText {
+        text-align: center;
+        font-family: inherit;
+        width: 40px;
+        border: none;
+        border-bottom: 2px solid #ffffff;
+        outline: 0;
+        font-size: 17px;
+        color: #ffffff;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+        margin-left: 10px;
+    }
+
+.filterBreak {
+    font-family: inherit;
+    font-size: 17px;
+}
+
+#filters #priceRangeFilter > div {
+    margin-bottom: 10px;
+}
+
+
+.badge {
+    padding: 0 3px;
+    background-color: blueviolet;
+    color: rgba(255, 235, 205, 0);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    top: -70px;
+    right: -50px;
+    width: 0.7rem;
+    background-color: transparent;
+}
+
+.Header__menuItem button {
+    background-color: transparent;
+    border: none;
+}
+
+[data-after-text],
+[data-before-text] {
+    --badge-offset-x: calc(0px - var(--badge-size) / 3);
+    --badge-offset-y: calc(0px - var(--badge-size) / 3);
+    --badge-size: 1rem;
+    --circle-size: 2rem;
+    --dot-offset: 0.5rem;
+    --dot-size: 0.5rem;
+    --b: initial;
+    --bgc: rgb(251, 249, 249);
+    --bdrs: 0;
+    --c: hsl(0, 94%, 49%);
+    --d: inline-flex;
+    --fz: 0.625rem;
+    --fw: 700;
+    --h: auto;
+    --l: initial;
+    --m: 0.4rem;
+    --p: 0;
+    --pos: static;
+    --r: initial;
+    --t: initial;
+    --tt: uppercase;
+    --w: initial;
+    position: relative;
+}
+
+    [data-after-text]:not([data-after-text=""])::after {
+        content: attr(data-after-text);
+    }
+
+
+    [data-after-text]:not([data-after-text=""])::after,
+    [data-before-text]:not([data-before-text=""])::before {
+        align-items: center;
+        background: var(--bgc);
+        border-radius: var(--bdrs);
+        bottom: var(--b);
+        box-shadow: var(--bxsh);
+        box-sizing: border-box;
+        color: var(--c);
+        display: var(--d);
+        font-size: var(--fz);
+        font-weight: var(--fw);
+        height: var(--h);
+        justify-content: center;
+        left: var(--l);
+        padding: var(--p);
+        position: var(--pos);
+        right: var(--r);
+        text-decoration: none;
+        text-transform: var(--tt);
+        top: var(--t);
+        width: var(--w);
+    }
+
+/* MODIFIERS */
+[data-after-type*="badge"]::after,
+[data-before-type*="badge"]::before {
+    --bdrs: var(--badge-size);
+    --bxsh: 0 0 0 2px rgba(246, 9, 9, 0.5);
+    --h: var(--badge-size);
+    --p: 0;
+    --pos: absolute;
+    --w: var(--badge-size);
+}
+
+
+
+
+
+/* POSITION */
+
+
+
+
+[data-after-type*="badge"][data-after-type*="top"]::after,
+[data-before-type*="badge"][data-before-type*="top"]::before {
+    --m: 0;
+    --t: var(--badge-offset-y);
+}
+
+.cartImg {
+    width: 20px;
+}
